@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html5>
-
+<!DOCTYPE html5>
+<meta charset="utf-8" />
 <html>
 <head>
 <title>  SKK Cinema </title>
@@ -49,20 +49,28 @@ p.mid{
 p.daepyo{
   font: 40px "Hanna"; cursive; text-align: center;
 }
+
+p.admin{
+    font : 20px "Nanum Pen Script"; curive; text-align: left;
+}
+#member{
+    font :20px "Nanum Pen Script"; curive; text-align: left;
+    
+}
 #work1{
   width : 33%;
   float : left;
-  font : 25px "Jeju Myeongjo"; cursive; text-align: center;
+  font : 25px "Hanna"; cursive; text-align: center;
 }
 #work2{
   width: 33.4%;
   float : left;
-  font : 25px "Jeju Myeongjo"; cursive; text-align: center;
+  font : 25px "Hanna"; cursive; text-align: center;
 }
 #work3{
   width: 33.3%;
   float : right;
-  font : 25px "Jeju Myeongjo"; cursive; text-align: center;
+  font : 25px "Hanna"; cursive; text-align: center;
 }
 #hr_{
   float:left;
@@ -106,7 +114,6 @@ ul li{
 </head>
 
 <body>
-
 <div id="header">
 
   <img src="https://cdn.namuwikiusercontent.com/storage/47b3d735d685ce57b78e0595bf86d93e888da9144969ca5e0a9366ec916118755de9e81e0698f771bf74fb5fcd3e302f0a51254802bf0f60134e7e135137eb859e0d6eacad393c440ae32215b904176a?e=1517740230&k=kUxxW7mCZdV1dbWhmnoGpA" width=100% height="500" margin="0">
@@ -115,25 +122,14 @@ ul li{
 
 
 </div>
-<!--
-<div id="center">
-  <p class="intro" style="text-align : center" font= "Nanum Pen Script">성균관 시네마 </p>
-  <br/> <hr> <br/>
-  <p class="sogae" font ="Hanna" > 소개</p> <br/>
-  <p class = "mid" font ="jejumyeongjo"> 63년 전주 출생. 89년 연세대 철학과 졸업.<br/>
-    92년 한국 영화 아카데미 9기로 입학하여 93년 한국 영화 아카데미 졸업 작품 〈고철을 위하여〉가 뱅쿠버 영화제 초청되었으며<br/>
-    박광수 감독의 〈그섬에 가고 싶다〉에서 연출부로, 94년 〈아름다운 청년 전태일〉에서 시나리오를 공동집필했다. <br/>
-    〈8월의 크리스마스〉로 데뷔하여 세련된 화법과 형식미로 신파조 멜로를 뛰어넘었다는 극찬을 받았다.</p>
-  <p></p>
-  <br/><br/><br/>
-</div>
--->
+
 <div id="works">
   <hr>
-  <p class="daepyo" font ="Hanna" > 상영작</p><br/>
+  <p class="daepyo" font ="Hanna" > 12월의 상영작</p><br/>
+  <p class="admin" ><a href="admin_login.html"> &nbsp;&nbsp;&nbsp;관리자 로그인</a></p><br/> 
   <div id='member'>
-    <button type="button" onclick="location.href='login.html' ">로그인</button> &nbsp;
-    <button type="button" onclick="location.href='join.html' ">회원가입</button>
+    <a href='login.html'>&nbsp;&nbsp;일반회원 로그인</a> 
+    <a href='join.html'>&nbsp;&nbsp;회원가입</a>
   </div>
   <p class="alabogi" > 예매? 포스터 클릭!</p>
   <br/><br/>
@@ -141,10 +137,13 @@ ul li{
   <div id="work1">
     <figure>
         <figcaption>봄날은 간다</figcaption>
+        <span style="font-size:12pt; line-height:1.0em">오전 10시</span>
         <br/>
         <a href="http://dnrwls.github.io/work1.html">
         <img src="http://movie.phinf.naver.net/20111222_101/132453823522438dy3_JPEG/movie_image.jpg" width="350" px height="450"px >
-        </a>
+
+	</a>
+	 
     </figure>
 
   </div>
@@ -153,6 +152,7 @@ ul li{
   <div id="work2">
   <figure>
   <figcaption>8월의 크리스마스</figcaption>
+  <span style="font-size:12pt; line-height:1.0em">오후 13시</span>
   <br/>
   <a href="http://dnrwls.github.io/work2.html">
   <img src="http://movie.phinf.naver.net/20131024_116/13826089621478XXIl_JPEG/movie_image.jpg" width="350"px height="450"px>
@@ -163,6 +163,7 @@ ul li{
   <div id="work3">
     <figure>
       <figcaption>행복</figcaption>
+      <span style="font-size:12pt; line-height:1.0em">오후 16시</span>
       <br/>
       <a href="http://dnrwls.github.io/work3.html" >
     <img src="http://movie.phinf.naver.net/20111222_37/1324559410756qeD33_JPEG/movie_image.jpg" width="350"px height="450"px>
@@ -276,4 +277,5 @@ ul li{
 
 </body>
 <a style="display:scroll;position:fixed;bottom:10px;right:10px;" href="#" title=”맨위로"><img src="http://paparecipe.com/img/btn_backtotop.png" width=55px ;height=55px;></a>
+
 </html>
